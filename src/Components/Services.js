@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Services.css';
 import { GiTeacher } from 'react-icons/gi';
-import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoIosBusiness } from 'react-icons/io';
 import { BsTools } from 'react-icons/bs';
 import { VscProject } from 'react-icons/vsc';
