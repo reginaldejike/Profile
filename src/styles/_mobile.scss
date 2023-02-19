@@ -1,0 +1,194 @@
+@media (max-width: 480px) {
+  .showcase {
+    height: 700px;
+    width: 100%;
+    overflow: auto;
+    nav {
+      .logo {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .mainmenu {
+        height: 40vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: bisque;
+        transition: top 1s ease;
+        display: none;
+      }
+
+      .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .openmenu {
+        display: block;
+      }
+    }
+
+    &-content {
+      display: grid;
+      justify-content: center;
+      margin-top: 30px;
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        margin: auto;
+      }
+
+      ul {
+        justify-content: center;
+      }
+
+      img {
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .aboutme {
+    height: 500px;
+    width: 100%;
+
+    .heading {
+      margin-top: 90px;
+      font-size: 38px;
+      font-weight: 700;
+    }
+
+    .para1 {
+      width: 200px;
+    }
+  }
+
+  .myskill {
+    width: 100%;
+    height: 600px;
+
+    h2 {
+      font-size: 38px;
+      font-weight: 700;
+    }
+
+    &-content {
+      margin-top: 30px;
+      .skill-item {
+        gap: 5px;
+      }
+
+      .logo {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 15px;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .services {
+    width: 100%;
+    height: 1500px;
+    h1 {
+      font-size: 38px;
+      font-weight: 700;
+    }
+    &-content {
+      .card {
+        width: 300px;
+
+        p {
+          padding-right: 20px;
+        }
+      }
+      .Row {
+        display: grid;
+        gap: 10px;
+      }
+    }
+  }
+
+  .project {
+    height: 2200px;
+    width: 100%;
+
+    h1 {
+      font-size: 38px;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+
+      .item1 {
+        width: 300px;
+        height: 300px;
+      }
+      .item2 {
+        width: 300px;
+        height: 300px;
+      }
+      .item3 {
+        width: 300px;
+        height: 300px;
+      }
+      .item4 {
+        width: 300px;
+        height: 300px;
+      }
+      .item5 {
+        width: 300px;
+        height: 300px;
+      }
+      .item6 {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+
+  .contact {
+    max-width: 100%;
+    margin-top: 50px;
+    &-content {
+      display: grid;
+
+      .info {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h1 {
+          font-size: 38px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .service-info {
+      width: 100%;
+      padding-top: 100px;
+      padding-left: 30px;
+      padding-right: 40px;
+      margin-top: 20px;
+    }
+  }
+}

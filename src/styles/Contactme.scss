@@ -1,0 +1,172 @@
+@import 'utilities';
+
+.contact {
+  height: 623px;
+
+  &-content {
+    display: flex;
+
+    .info {
+      width: 60%;
+      margin-top: 142px;
+      padding-left: 121px;
+
+      ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        margin-top: 20px;
+      }
+
+      li {
+        padding: 0 0 20px 0;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 48px;
+        font-family: Playfair;
+        line-height: 66px;
+        letter-spacing: -0.03em;
+        color: #000000;
+      }
+
+      p {
+        font-family: Playfair;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+      }
+
+      .icon-control {
+        margin-top: 49px;
+        display: grid;
+        gap: 30px;
+
+        .sub-icon {
+          display: flex;
+          gap: 20px;
+
+          .icon-info {
+            display: grid;
+
+            .para1 {
+              font-family: Playfair;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 16px;
+              color: #000000;
+              line-height: 22px;
+            }
+
+            .para2 {
+              font-family: Playfair;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              color: #737373;
+            }
+          }
+        }
+      }
+
+      .sub-info {
+        display: flex;
+        gap: 30px;
+
+        p {
+          font-family: Playfair;
+          font-style: none;
+          font-weight: 600;
+          font-size: 20px;
+          padding-top: 29px;
+        }
+      }
+    }
+
+    .service-info {
+      width: 40%;
+      background: #1c41b0;
+      color: #fff;
+      height: 623px;
+      padding-top: 100px;
+      padding-left: 82px;
+      padding-right: 141px;
+
+      .para1 {
+        font-family: Playfair;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .para2 {
+        font-family: Playfair;
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 38px;
+        color: #ffffff;
+      }
+
+      ::placeholder {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: Playfair;
+      }
+
+      form {
+        display: grid;
+
+        input {
+          padding: 18px;
+          background: #1c41b0;
+          color: #ffffff;
+          border: none;
+          border-bottom: 0.5px solid #ffffff;
+          margin-top: 40px;
+          outline: none;
+          font-family: Playfair;
+          font-size: 15px;
+          font-weight: 400;
+        }
+
+        textarea {
+          padding: 18px;
+          background: #1c41b0;
+          border: none;
+          outline: none;
+          border-bottom: 0.5px solid #ffffff;
+          margin-top: 40px;
+          color: #ffffff;
+          overflow: hidden;
+          font-family: Playfair;
+          font-size: 15px;
+          font-weight: 400;
+        }
+
+        .btn {
+          width: 203px;
+          height: 55px;
+          border-radius: 12px;
+          border: 1px solid #ffffff;
+          background: #ffffff;
+          margin-top: 40px;
+          color: #2351dc;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+
+          &:hover {
+            transform: scale(0.98);
+          }
+        }
+      }
+    }
+  }
+}
+@import 'mobile';
+@import 'tablet';
+@import 'portTab';

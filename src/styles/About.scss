@@ -1,0 +1,108 @@
+@import 'utilities';
+
+.aboutme {
+  height: 434px;
+  background: #f6f8fe;
+
+  .heading {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: Playfair;
+    display: flex;
+    justify-content: center;
+    margin-top: 124px;
+  }
+
+  .para1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Playfair;
+    font-style: none;
+    line-height: 28px;
+    width: 465px;
+    margin: auto;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  li {
+    padding: 0 0 20px 20px;
+
+    .github {
+      color: rgb(26, 24, 24);
+    }
+    .linkedin {
+      color: #2351dc;
+    }
+    .twitter {
+      color: #2351dc;
+    }
+  }
+}
+
+.myskill {
+  background: #ffffff;
+  height: 698px;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Playfair;
+    margin-top: 96px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Playfair;
+    color: #4d4d4d;
+    font-style: normal;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    margin-top: 62px;
+
+    .first-flex {
+      width: 50%;
+      padding-top: 20px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .second-flex {
+      padding-top: 20px;
+      width: 50%;
+      display: grid;
+      gap: 20px;
+    }
+
+    .skill-item {
+      display: flex;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 4rem;
+      color: #2351dc;
+    }
+
+    p {
+      font-family: Playfair;
+      font-size: 24px;
+      font-weight: 600;
+      color: #000;
+      padding-top: 30px;
+    }
+  }
+}
+@import 'mobile';
+@import 'tablet';
+@import 'porttab';
