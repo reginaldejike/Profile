@@ -13,7 +13,7 @@ import { BsMicrosoft } from 'react-icons/bs';
 const Aboutme = () => {
   return (
     <>
-      <div className='aboutme'>
+      <div className='aboutme' id='aboutme'>
         <div className='container'>
           <h1 className='heading'>About Me</h1>
           <p className='para1'>

@@ -6,48 +6,62 @@ import { AiFillTwitterSquare } from 'react-icons/ai';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoIosClose } from 'react-icons/io';
 import { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Header() {
-  const [closeMenu, setCloseMenu] = useState('closemenu');
-  const [openMenu, setOpenMenu] = useState('openmenu');
-  const [isclicked, setIsclicked] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
-  const show = () => {
-    if (isclicked) {
-      setOpenMenu(openMenu);
-    } else {
-      setCloseMenu(closeMenu);
-    }
-  };
   return (
     <>
       <header className='showcase'>
         <div className='container'>
           <nav>
             <h1 className='logo'>Reginald Ejike</h1>
-            <div className='openmenu' onClick={show}>
-              <RxHamburgerMenu />
-            </div>
-            <ul className='mainmenu'>
-              <li>
-                <a href=''> About Me </a>
-              </li>
-              <li>
-                <a href=''> Services </a>
-              </li>
 
+            <ul
+              className={!isMobile ? 'mainmenu-mobile' : 'mainmenu'}
+              onClick={() => setIsMobile(false)}
+            >
               <li>
-                <a href=''> Projects</a>
+                <Link to='#aboutme' className='link-item'>
+                  About Me
+                </Link>
               </li>
               <li>
-                <a href=''> Contact Me</a>
+                <Link to='#services' className='link-item'>
+                  Services
+                </Link>
               </li>
-              <div className='closemenu'>
-                <IoIosClose />
-              </div>
+              <li>
+                <Link to='#project' className='link-item'>
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to='#contactme' className='link-item'>
+                  Contact Me
+                </Link>
+              </li>
             </ul>
+            <button
+              className='mobile-view-icon'
+              onClick={() => setIsMobile(!isMobile)}
+            >
+              {!isMobile ? (
+                <>
+                  <div className='openmenu'>
+                    <IoIosClose />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className='closemenu'>
+                    <RxHamburgerMenu />
+                  </div>
+                </>
+              )}
+            </button>
           </nav>
-
           <div className='showcase-content'>
             <div>
               <h3> Hey there!</h3>

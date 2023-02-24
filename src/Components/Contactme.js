@@ -8,7 +8,7 @@ import '../styles/Contactme.css';
 const Contactme = () => {
   return (
     <>
-      <div className='contact'>
+      <div className='contact' id='contactme'>
         <div className='contact-content'>
           <div className='info'>
             <h1>Get In Touch</h1>
