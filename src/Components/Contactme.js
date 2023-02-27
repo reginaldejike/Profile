@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { CiMail } from 'react-icons/ci';
 import { BsTelephoneInbound } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillTwitterSquare } from 'react-icons/ai';
+import emailjs from '@emailjs/browser';
 import '../styles/Contactme.css';
 
 const Contactme = () => {
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [msg, setMsg] = useState('');
+  const form = useRef();
+
+  const handleSend = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_xu5zbz9',
+        'template_qdtjwiv',
+        form.current,
+        'Cefwa7r9MJGvDnK1r'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('message sent');
+          alert('Message sent');
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Message not sent ');
+        }
+      );
+  };
   return (
     <>
       <div className='contact' id='contactme'>
@@ -19,13 +47,16 @@ const Contactme = () => {
             <div className='sub-info'>
               <ul>
                 <li>
-                  <a href='https://www.linkedin.com/in/reginald-ejike-168143200/'>
-                    <AiFillLinkedin size={'3rem'} border={'50%'} />
+                  <a
+                    href='https://www.linkedin.com/in/reginald-ejike-168143200/'
+                    className='icon'
+                  >
+                    <AiFillLinkedin />
                   </a>
                 </li>
                 <li>
-                  <a href='https://twitter.com/reginald_ejike'>
-                    <AiFillTwitterSquare size={'3rem'} />
+                  <a href='https://twitter.com/reginald_ejike' className='icon'>
+                    <AiFillTwitterSquare />
                   </a>
                 </li>
               </ul>
@@ -51,11 +82,31 @@ const Contactme = () => {
           <div className='service-info'>
             <p className='para1'>Need a Service?</p>
             <p className='para2'>Send A Message</p>
-            <form action=''>
-              <input type='text' placeholder='Enter Fullname' />
-              <input type='email' placeholder='Enter Email Address' />
-              <textarea name='' id='' placeholder='Write A Message'></textarea>
-              <button className='btn'>Send Message </button>
+            <form ref={form} onSubmit={handleSend}>
+              <input
+                type='text'
+                placeholder='Enter Fullname'
+                value={fullName}
+                name='user_name'
+                onChange={(e) => setFullName(e.target.value)}
+              />
+              <input
+                type='email'
+                placeholder='Enter Email Address'
+                value={email}
+                name='user_email'
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <textarea
+                name='message'
+                id=''
+                placeholder='Write A Message'
+                value={msg}
+                onChange={(e) => setMsg(e.target.value)}
+              ></textarea>
+              <button className='btn' value='Send'>
+                Send Message{' '}
+              </button>
             </form>
           </div>
         </div>

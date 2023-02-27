@@ -36,7 +36,7 @@ const Project = () => {
             </div>
             <div className='grid-item item3'>
               <a href='https://reginaldejike.netlify.app/'>My Portfolio</a>
-              <p className='para1'>Reactjs and Scss</p>
+              <p className='para1'>Reactjs, Scss and Emailjs</p>
               <p className='para2'>
                 I developed my portfolio using reactjs and Scss utilizing flex
                 and grid system
