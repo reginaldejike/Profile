@@ -1,4 +1,5 @@
 @media (max-width: 480px) {
+  //mobile design for header
   .showcase {
     height: 700px;
     width: 100%;
@@ -9,7 +10,7 @@
       }
       .mainmenu-mobile {
         position: absolute;
-        display: block;
+        display: grid;
         background-color: #f4f4f4;
         left: 0;
         top: 50px;
@@ -76,7 +77,7 @@
       }
     }
   }
-
+  //mobile design for about me
   .aboutme {
     height: 500px;
     width: 100%;
@@ -116,7 +117,7 @@
       }
     }
   }
-
+  //mobile design for services
   .services {
     width: 100%;
     height: 1500px;
@@ -138,7 +139,7 @@
       }
     }
   }
-
+  //mobile design for project
   .project {
     height: 2200px;
     width: 100%;
@@ -173,6 +174,7 @@
       .item5 {
         width: 300px;
         height: 300px;
+        overflow-y: scroll;
       }
       .item6 {
         width: 300px;
@@ -180,7 +182,7 @@
       }
     }
   }
-
+  //mobile design for contact
   .contact {
     max-width: 100%;
     margin-top: 50px;

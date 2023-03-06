@@ -14,25 +14,28 @@ const Contactme = () => {
 
   const handleSend = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        'service_xu5zbz9',
-        'template_qdtjwiv',
-        form.current,
-        'Cefwa7r9MJGvDnK1r'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log('message sent');
-          alert('Message sent');
-        },
-        (error) => {
-          console.log(error.text);
-          alert('Message not sent ');
-        }
-      );
+    if (!(fullName && email && msg)) {
+      alert('Please fill in the fields');
+    } else {
+      emailjs
+        .sendForm(
+          'service_xu5zbz9',
+          'template_qdtjwiv',
+          form.current,
+          'Cefwa7r9MJGvDnK1r'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log('message sent');
+            alert('Message sent');
+          },
+          (error) => {
+            console.log(error.text);
+            alert('Message not sent ');
+          }
+        );
+    }
   };
   return (
     <>

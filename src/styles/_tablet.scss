@@ -19,7 +19,7 @@
       }
       .mainmenu-mobile {
         position: absolute;
-        display: block;
+        display: grid;
         background-color: #f4f4f4;
         left: 0;
         top: 50px;
@@ -27,7 +27,7 @@
         width: 100%;
         height: 30vh;
 
-        li {
+        .link-item {
           list-style: none;
           text-align: center;
           padding-top: 20px;

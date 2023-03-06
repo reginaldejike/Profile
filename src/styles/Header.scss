@@ -22,19 +22,23 @@
     }
     .mainmenu {
       display: flex;
-      li {
+      justify-content: flex-end;
+      list-style: none;
+
+      .link-item {
         list-style: none;
         cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px;
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: Playfair;
 
         a {
-          display: inline-block;
           text-decoration: none;
           text-transform: capitalize;
-          color: #000;
-          padding: 15px;
-          font-size: 18px;
-          font-weight: 400;
-          font-family: Playfair;
         }
         a:hover {
           color: rgb(79, 116, 116);
@@ -92,6 +96,6 @@
     }
   }
 }
-@import 'mobile';
-@import 'porttab';
 @import 'tablet';
+@import 'porttab';
+@import 'mobile';

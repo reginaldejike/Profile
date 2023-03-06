@@ -19,35 +19,30 @@ function Header() {
             <h1 className='logo'>Reginald Ejike</h1>
 
             <ul
-              className={!isMobile ? 'mainmenu-mobile' : 'mainmenu'}
+              className={!isMobile ? 'mainmenu' : 'mainmenu-mobile'}
               onClick={() => setIsMobile(false)}
             >
-              <li>
-                <Link to='#aboutme' className='link-item'>
-                  About Me
-                </Link>
-              </li>
-              <li>
-                <Link to='#services' className='link-item'>
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to='#project' className='link-item'>
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link to='#contactme' className='link-item'>
-                  Contact Me
-                </Link>
-              </li>
+              <Link to='#aboutme' className='link-item'>
+                <li>About Me</li>
+              </Link>
+
+              <Link to='#services' className='link-item'>
+                <li> Services</li>
+              </Link>
+
+              <Link to='#project' className='link-item'>
+                <li>Projects</li>
+              </Link>
+
+              <Link to='#contactme' className='link-item'>
+                <li>Contact Me</li>
+              </Link>
             </ul>
             <button
               className='mobile-view-icon'
               onClick={() => setIsMobile(!isMobile)}
             >
-              {!isMobile ? (
+              {isMobile ? (
                 <>
                   <div className='openmenu'>
                     <IoIosClose />
