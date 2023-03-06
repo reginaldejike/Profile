@@ -9,7 +9,7 @@ import { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
 function Header() {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   return (
     <>
