@@ -92,6 +92,19 @@
 
     img {
       width: 30%;
+      animation-name: slidein;
+      animation-duration: 3s;
+    }
+
+    @keyframes slidein {
+      from {
+        transform: translateX(-100%);
+        overflow-y: none;
+      }
+      to {
+        transform: translateX(0);
+        overflow-y: none;
+      }
     }
   }
 }
