@@ -67,24 +67,24 @@ function Header() {
               </p>
               <ul>
                 <li>
-                  <a href='http://github.com/pizzii' className='github'>
-                    <BsGithub size={'3rem'} />
+                  <a href='http://github.com/pizzii' className='github icon'>
+                    <BsGithub />
                   </a>
                 </li>
                 <li>
                   <a
                     href='https://www.linkedin.com/in/reginald-ejike-168143200/'
-                    className='linkedin'
+                    className='linkedin icon'
                   >
-                    <AiFillLinkedin size={'3rem'} />
+                    <AiFillLinkedin />
                   </a>
                 </li>
                 <li>
                   <a
                     href='https://twitter.com/reginald_ejike'
-                    className='twitter'
+                    className='twitter icon'
                   >
-                    <AiFillTwitterSquare size={'3rem'} />
+                    <AiFillTwitterSquare />
                   </a>
                 </li>
               </ul>

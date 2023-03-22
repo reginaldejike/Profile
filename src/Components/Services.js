@@ -12,7 +12,9 @@ const Services = () => {
       <div className='services' id='services'>
         <div className='container'>
           <h1>Services I Render</h1>
-          <p>I am ready at all time to render my services in all these. </p>
+          <p className='s-header'>
+            I am ready at all time to render my services in all these.{' '}
+          </p>
 
           <div className='services-content'>
             <div className='Row'>

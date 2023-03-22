@@ -57,7 +57,7 @@
     margin-top: 96px;
   }
 
-  p {
+  .skill-subheading {
     font-size: 18px;
     font-weight: 500;
     font-family: Playfair;
@@ -69,6 +69,14 @@
     display: flex;
     align-items: center;
     margin-top: 62px;
+
+    .icon-header {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: Playfair;
+      color: #4d4d4d;
+      font-style: normal;
+    }
 
     .first-flex {
       width: 50%;

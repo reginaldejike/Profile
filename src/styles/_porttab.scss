@@ -1,19 +1,17 @@
-@media (min-width: 768px) and (max-width: 1024) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .showcase {
-    height: 700px;
+    height: 800px;
     width: 100%;
     overflow: auto;
 
     nav {
       .mainmenu {
         display: none;
-        justify-content: flex-end;
-        list-style: none;
       }
 
       .mainmenu-mobile {
         position: absolute;
-        display: block;
+        display: grid;
         background-color: #f4f4f4;
         left: 0;
         top: 50px;
@@ -33,8 +31,8 @@
           display: inline-block;
           text-decoration: none;
           color: #000;
-          font-size: 18px;
-          font-weight: 400;
+          font-size: 23px;
+          font-weight: 600;
           font-family: Playfair;
         }
         a:hover {
@@ -45,7 +43,7 @@
       .mobile-view-icon {
         display: block;
         position: absolute;
-        font-size: 30px;
+        font-size: 50px;
         border: none;
         outline: none;
         top: 15px;
@@ -81,12 +79,34 @@
     }
   }
 
+  .aboutme {
+    height: 440px;
+    .heading {
+      font-size: 50px;
+      margin-top: 100px;
+    }
+
+    .para1 {
+      font-size: 20px;
+      font-weight: 550;
+    }
+  }
+
   .myskill {
     width: 100%;
+
+    .skill-subheading {
+      font-size: 20px;
+    }
+
+    .icon-header {
+      font-size: 20px;
+      font-weight: 600;
+    }
   }
 
   .project {
-    height: 2100px;
+    height: 2900px;
     width: 100%;
 
     &-content {
@@ -97,33 +117,38 @@
       gap: 30px;
 
       .item1 {
-        height: 300px;
+        width: 488px;
+        height: 400px;
       }
       .item2 {
-        width: 388px;
-        height: 300px;
+        width: 488px;
+        height: 400px;
       }
       .item3 {
-        width: 388px;
-        height: 300px;
+        width: 488px;
+        height: 400px;
       }
       .item4 {
-        width: 388px;
-        height: 300px;
+        width: 488px;
+        height: 400px;
       }
       .item5 {
-        width: 388px;
-        height: 300px;
+        width: 488px;
+        height: 400px;
       }
       .item6 {
-        width: 388px;
-        height: 300px;
+        width: 488px;
+        height: 400px;
       }
     }
   }
 
   .services {
     height: 1500px;
+    .s-header {
+      font-size: 20px;
+      font-weight: 350px;
+    }
     &-content {
       .Row {
         display: grid;
@@ -133,7 +158,6 @@
 
   .contact {
     max-width: 100%;
-    margin-top: 30px;
     &-content {
       display: grid;
 
@@ -150,6 +174,10 @@
     .service-info {
       width: 100%;
       margin-top: 30px;
+
+      .btn {
+        margin-bottom: 30px;
+      }
     }
   }
 }

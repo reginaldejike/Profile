@@ -47,26 +47,26 @@ const Aboutme = () => {
       <div className='myskill'>
         <div className='container'>
           <h2>My SkillS</h2>
-          <p>Here are a few skills I possess</p>
+          <p className='skill-subheading'>Here are a few skills I possess</p>
           <div className='myskill-content'>
             <div className='first-flex'>
               <div className='skill-item'>
                 <div className='logo'>
                   <DiJavascript1 />
                 </div>
-                <p>JavaScript</p>
+                <p className='icon-header'>JavaScript</p>
               </div>
               <div className='skill-item'>
                 <div className='logo'>
                   <FaReact />
                 </div>
-                <p>ReactJs</p>
+                <p className='icon-header'>ReactJs</p>
               </div>
               <div className='skill-item'>
                 <div className='logo'>
                   <FaHtml5 />
                 </div>
-                <p>Html5</p>
+                <p className='icon-header'>Html5</p>
               </div>
             </div>
             <div className='second-flex'>
@@ -74,19 +74,19 @@ const Aboutme = () => {
                 <div className='logo'>
                   <FaBootstrap />
                 </div>
-                <p>Bootstrap</p>
+                <p className='icon-header'>Bootstrap</p>
               </div>
               <div className='skill-item'>
                 <div className='logo'>
                   <FaSass />
                 </div>
-                <p> Scss {'(Sass)'}</p>
+                <p className='icon-header'> Scss {'(Sass)'}</p>
               </div>
               <div className='skill-item'>
                 <div className='logo'>
                   <BsMicrosoft />
                 </div>
-                <p> Microsoft Office </p>
+                <p className='icon-header'> Microsoft Office </p>
               </div>
             </div>
           </div>
