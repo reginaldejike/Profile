@@ -66,19 +66,26 @@ const Contactme = () => {
               <p>-Reginald Ejike</p>
             </div>
             <div className='icon-control'>
-              <div className='sub-icon'>
-                <CiMail color={'#2351dc'} size={'2rem'} />
-                <div className='icon-info'>
-                  <p className='para1'>reginaldejike3@gmail.com</p>
-                  <p className='para2'>Send a mail anytime</p>
-                </div>
+              <div>
+                <a
+                  href="mailto:'reginaldejike3@gmail.com'"
+                  className='sub-icon'
+                >
+                  <CiMail color={'#2351dc'} size={'2rem'} />
+                  <div className='icon-info'>
+                    <p className='para1'>reginaldejike3@gmail.com</p>
+                    <p className='para2'>Send a mail anytime</p>
+                  </div>
+                </a>
               </div>
-              <div className='sub-icon'>
-                <BsTelephoneInbound color={'#2351dc'} size={'2rem'} />
-                <div className='icon-info'>
-                  <p className='para1'>+2348189282143</p>
-                  <p className='para2'>Put a call at anytime</p>
-                </div>
+              <div>
+                <a href='tel:"+2348189282143"' className='sub-icon'>
+                  <BsTelephoneInbound color={'#2351dc'} size={'2rem'} />
+                  <div className='icon-info'>
+                    <p className='para1'>+2348189282143</p>
+                    <p className='para2'>Put a call at anytime</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

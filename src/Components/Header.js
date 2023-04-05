@@ -1,5 +1,5 @@
 import '../styles/Header.css';
-import me from '../image/IMG_4466.jpeg';
+import me from '../image/IMG_4466.jpg';
 import { BsGithub } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillTwitterSquare } from 'react-icons/ai';
