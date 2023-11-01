@@ -1,14 +1,13 @@
 @import 'utilities';
 
 .contact {
-  height: 623px;
+  height: 650px;
 
   &-content {
     display: flex;
 
     .info {
       width: 60%;
-      margin-top: 142px;
       padding-left: 121px;
 
       ul {
@@ -24,6 +23,7 @@
 
       h1 {
         font-weight: 700;
+        margin-top: 142px;
         font-size: 48px;
         font-family: Playfair;
         line-height: 66px;
@@ -82,11 +82,119 @@
           font-style: none;
           font-weight: 600;
           font-size: 20px;
-          padding-top: 29px;
+          padding-top: 48px;
         }
-        .icon {
+
+        .linkedin {
           font-size: 3rem;
           color: #2351dc;
+        }
+        .twitter {
+          font-size: 3rem;
+          color: #2351dc;
+        }
+        .icon {
+          transition: transform 0.3s;
+
+          :hover {
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+
+    .dark {
+      width: 60%;
+      padding-left: 121px;
+      background-color: #333;
+      ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        margin-top: 20px;
+      }
+
+      li {
+        padding: 0 0 20px 0;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 48px;
+        font-family: Playfair;
+        line-height: 66px;
+        letter-spacing: -0.03em;
+        color: #fff;
+        margin-top: 142px;
+      }
+
+      p {
+        font-family: Playfair;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+      }
+
+      .icon-control {
+        margin-top: 49px;
+        display: grid;
+        gap: 30px;
+
+        .sub-icon {
+          display: flex;
+          gap: 20px;
+          text-decoration: none;
+
+          .icon-info {
+            display: grid;
+
+            .para1 {
+              font-family: Playfair;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 16px;
+              color: #fff;
+              line-height: 22px;
+            }
+
+            .para2 {
+              font-family: Playfair;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              color: #737373;
+            }
+          }
+        }
+      }
+
+      .sub-info {
+        display: flex;
+        gap: 30px;
+
+        p {
+          font-family: Playfair;
+          font-style: none;
+          font-weight: 600;
+          font-size: 20px;
+          padding-top: 29px;
+        }
+        .linkedin {
+          font-size: 3rem;
+          color: #2351dc;
+        }
+        .twitter {
+          font-size: 3rem;
+          color: #2351dc;
+        }
+        .icon {
+          transition: transform 0.3s;
+
+          :hover {
+            transform: translateY(-5px);
+          }
         }
       }
     }
@@ -95,7 +203,7 @@
       width: 40%;
       background: #1c41b0;
       color: #fff;
-      height: 623px;
+      height: 650px;
       padding-top: 100px;
       padding-left: 82px;
       padding-right: 141px;
@@ -154,11 +262,11 @@
 
         .btn {
           width: 203px;
-          height: 55px;
           border-radius: 12px;
           border: 1px solid #ffffff;
           background: #ffffff;
           margin-top: 40px;
+          padding: 15px;
           color: #2351dc;
           text-align: center;
           cursor: pointer;

@@ -1,0 +1,15 @@
+// .dark {
+//   background-color: #333;
+//   color: #fff;
+// }
+// .light {
+//   background-color: #fff;
+//   color: #333;
+// }
+
+$background-light: #fff;
+$background-dark: #000;
+
+[data-theme='darK'] {
+  background: $background-dark;
+}

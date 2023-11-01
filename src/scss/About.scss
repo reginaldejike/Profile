@@ -1,8 +1,16 @@
 @import 'utilities';
 
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+.light {
+  background-color: #f6f8fe;
+  color: #333;
+}
+
 .aboutme {
-  height: 434px;
-  background: #f6f8fe;
+  height: 550px;
 
   .heading {
     font-size: 48px;
@@ -10,7 +18,7 @@
     font-family: Playfair;
     display: flex;
     justify-content: center;
-    margin-top: 124px;
+    margin-top: 90px;
   }
 
   .para1 {
@@ -32,22 +40,37 @@
   }
 
   li {
-    padding: 0 0 20px 20px;
+    padding-right: 20px;
 
     .github {
       color: rgb(26, 24, 24);
+      font-size: 3rem;
     }
     .linkedin {
       color: #2351dc;
+      font-size: 3rem;
     }
     .twitter {
       color: #2351dc;
+      font-size: 3rem;
     }
+
+    .icon {
+      transition: transform 0.3s;
+
+      :hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+  .hire-btn {
+    display: flex;
+    justify-content: center;
   }
 }
 
 .myskill {
-  background: #ffffff;
+  // background: #ffffff;
   height: 698px;
 
   h2 {
@@ -65,6 +88,14 @@
     font-style: normal;
   }
 
+  .skill-darkmode {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Playfair;
+    color: #fff;
+    font-style: normal;
+  }
+
   &-content {
     display: flex;
     align-items: center;
@@ -75,6 +106,14 @@
       font-weight: 500;
       font-family: Playfair;
       color: #4d4d4d;
+      font-style: normal;
+    }
+
+    .icon-header-darkmode {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: Playfair;
+      color: #fff;
       font-style: normal;
     }
 

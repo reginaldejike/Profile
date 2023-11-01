@@ -4,9 +4,9 @@ import { BsTelephoneInbound } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillTwitterSquare } from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
-import '../styles/Contactme.css';
+import '../css/Contactme.css';
 
-const Contactme = () => {
+const Contactme = ({ theme }) => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [msg, setMsg] = useState('');
@@ -41,10 +41,10 @@ const Contactme = () => {
     <>
       <div className='contact' id='contactme'>
         <div className='contact-content'>
-          <div className='info'>
+          <div className={theme === 'light' ? 'info' : 'dark'}>
             <h1>Get In Touch</h1>
             <p>
-              Please free to get in touch with me when ever my services are
+              Please feel free to get in touch with me whenever my services are
               needed.
             </p>
             <div className='sub-info'>
@@ -52,13 +52,16 @@ const Contactme = () => {
                 <li>
                   <a
                     href='https://www.linkedin.com/in/reginald-ejike-168143200/'
-                    className='icon'
+                    className='linkedin icon'
                   >
                     <AiFillLinkedin />
                   </a>
                 </li>
                 <li>
-                  <a href='https://twitter.com/reginald_ejike' className='icon'>
+                  <a
+                    href='https://twitter.com/reginald_ejike'
+                    className='twitter icon'
+                  >
                     <AiFillTwitterSquare />
                   </a>
                 </li>
@@ -115,7 +118,7 @@ const Contactme = () => {
                 onChange={(e) => setMsg(e.target.value)}
               ></textarea>
               <button className='btn' value='Send'>
-                Send Message{' '}
+                Send Message
               </button>
             </form>
           </div>

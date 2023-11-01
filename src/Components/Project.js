@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Project.css';
+import '../css/Project.css';
 
-const Project = () => {
+const Project = ({ theme }) => {
   return (
     <>
-      <div className='project' id='project'>
+      <div className={theme === 'light' ? 'project' : 'dark'} id='project'>
         <div className='container'>
           <h1>Milestones of Projects</h1>
           <p className='para'>

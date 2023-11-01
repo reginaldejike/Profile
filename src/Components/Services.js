@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/Services.css';
+import '../css/Services.css';
 import { GiTeacher } from 'react-icons/gi';
 import { IoIosBusiness } from 'react-icons/io';
 import { BsTools } from 'react-icons/bs';
 import { VscProject } from 'react-icons/vsc';
 import { CgWebsite } from 'react-icons/cg';
 
-const Services = () => {
+const Services = ({ theme }) => {
   return (
     <>
-      <div className='services' id='services'>
+      <div className={theme === 'light' ? 'services' : 'dark'} id='services'>
         <div className='container'>
           <h1>Services I Render</h1>
           <p className='s-header'>
