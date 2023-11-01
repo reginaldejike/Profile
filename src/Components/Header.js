@@ -11,7 +11,7 @@ import Button from './Button';
 
 function Header({ theme, setTheme }) {
   const [isMobile, setIsMobile] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  // const [isDark, setIsDark] = useState(false);
 
   return (
     <>
@@ -54,7 +54,7 @@ function Header({ theme, setTheme }) {
                   Contact Me
                 </Link>
 
-                <input type='checkbox' id='dark_mode' />
+                {/* <input type='checkbox' id='dark_mode' /> */}
 
                 <select
                   className='theme'
