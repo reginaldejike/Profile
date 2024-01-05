@@ -1,16 +1,12 @@
 @import 'utilities';
+@import 'index';
 
-.dark {
-  background-color: #333;
-  color: #fff;
-}
-.light {
-  background-color: #f4f4f4;
-  color: #333;
+header {
+  background-color: var(--body_background);
 }
 
 .showcase {
-  height: 550px;
+  height: 580px;
 
   .mobile-view-icon {
     display: none;
@@ -21,34 +17,30 @@
     align-items: center;
     justify-content: space-between;
     height: 70px;
+    position: fixed;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
 
     .logo {
-      margin-top: 5px;
       font-weight: 400;
       font-size: 25px;
       font-family: Playfair;
       list-style: none;
       text-decoration: none;
-      color: #000;
+      color: var(--link_color);
     }
-
+    a:hover {
+      color: var(--link_hover);
+    }
     .theme {
       border: none;
-      background-color: inherit;
     }
 
-    .darkmode {
-      margin-top: 5px;
-      font-weight: 400;
-      font-size: 25px;
-      font-family: Playfair;
-      list-style: none;
-      text-decoration: none;
-      color: #fff;
-    }
     .mainmenu {
       display: flex;
-      // justify-content: flex-end;
       list-style: none;
 
       .link-item {
@@ -57,18 +49,7 @@
         display: inline-block;
         text-decoration: none;
         padding: 15px;
-        color: #000;
-        font-size: 18px;
-        font-weight: 400;
-        font-family: Playfair;
-      }
-      .link-item-dark {
-        list-style: none;
-        cursor: pointer;
-        display: inline-block;
-        text-decoration: none;
-        padding: 15px;
-        color: #fff;
+        color: var(--link_color);
         font-size: 18px;
         font-weight: 400;
         font-family: Playfair;
@@ -78,15 +59,19 @@
         text-transform: capitalize;
       }
       a:hover {
-        color: rgb(79, 116, 116);
+        color: var(--link_hover);
       }
     }
+  }
+  .scrolled {
+    background-color: var(--nav_scroll);
   }
   &-content {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    color: var(--body_color);
+    margin-top: 50px;
     .intro {
       animation-name: fadebottom;
       animation-duration: 5s;
@@ -109,7 +94,7 @@
       padding: 20px 20px 0 0;
 
       .github {
-        color: #000;
+        color: var(--body_color);
         font-size: 3rem;
       }
       .linkedin {
@@ -139,7 +124,7 @@
       font-family: Playfair;
 
       .myname {
-        color: rgb(71, 71, 133);
+        color: var(--myname_color);
         font-weight: 400;
       }
     }
@@ -148,6 +133,7 @@
       width: 35%;
       animation-name: fadein;
       animation-duration: 5s;
+      overflow: none;
     }
 
     @keyframes fadein {
@@ -162,7 +148,7 @@
 
   @keyframes fadebottom {
     0% {
-      transform: translateY(50px);
+      transform: translateY(40px);
       opacity: 0;
     }
 

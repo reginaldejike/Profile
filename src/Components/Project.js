@@ -1,10 +1,24 @@
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import '../css/Project.css';
 
-const Project = ({ theme }) => {
+const Project = () => {
+  const handleClick = (url) => {
+    window.open(url, '_blank');
+  };
+  const settings = {
+    className: 'center',
+    centerMode: true,
+    infinite: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    speed: 500,
+  };
   return (
     <>
-      <div className={theme === 'light' ? 'project' : 'dark'} id='project'>
+      <div className='project' id='project'>
         <div className='container'>
           <h1>Milestones of Projects</h1>
           <p className='para'>
@@ -12,79 +26,29 @@ const Project = ({ theme }) => {
             with
           </p>
           <div className='project-content'>
-            <div className='grid-item item1'>
-              <a href='https://exqure16.github.io/frontend/'>Exqure</a>
-              <p className='para1'>Reactjs, Bootstrap, Context API</p>
-              <p className='para2'>
-                Exqure is a third party app like an escrow where we provide user
-                with full confidence and security. My task in exqure project was
-                to develop the frontend designed by product designers of the
-                project and connect it with the Api provided by the backend
-                developers.
-              </p>
-            </div>
-            <div className='grid-item item2'>
-              <a href='https://exqure16.github.io/exqure-frontend/'>
-                Coming soon
-              </a>
-              <p className='para1'>Reactjs and mailchimp</p>
-              <p className='para2'>
-                Coming soon is an awaiting app to anticipate the arrival of an
-                app. Here I handled the subcribe part of the app, where I used
-                mailchimp to allow users subcribe to our newsletters.{' '}
-              </p>
-            </div>
-            <div className='grid-item item3'>
-              <a href='https://reginaldejike.netlify.app/'>My Portfolio</a>
-              <p className='para1'>Reactjs, Scss and Emailjs</p>
-              <p className='para2'>
-                I developed my portfolio using reactjs and Scss utilizing flex
-                and grid system
-              </p>
-            </div>
-            <div className='grid-item item4'>
-              <a href='https://pizzii.github.io/request-managment-system/'>
-                Request Management System
-              </a>
-              <p className='para1'>Html, css, Bootstrap and JavaScript</p>
-              <p className='para2'>
-                {' '}
-                Request Management System is an app still at it conception
-                stage, it is an idea I have nursed in my head for quite a long
-                time which I hope to finish in a short while.
-              </p>
-            </div>
-            <div className='grid-item item5'>
-              <a href='https://docs.google.com/presentation/d/1ftnWESJPZpJagJXIbkrEzkQl3zd96g-3/edit?usp=sharing&ouid=105667242064346792794&rtpof=true&sd=true'>
-                Project Management {'(Portfolio)'}
-              </a>
-              <p className='para1'>
-                MVP Strategy, MSCW method, T-Shirt framework and Market research
-                strategy
-              </p>
-              <p className='para2'>
-                I took a project managment course with{' '}
-                <a href='https://app.entrylevel.net/' className='in-link'>
-                  entrylevel
-                </a>{' '}
-                where I got to add another skill and my productivity to a firm
-                or team as this course gave me the ability and tech know how on
-                how to handle projects and get very good reasonable feedback
-                form users using usecase strategies and applying critical
-                thinking to project by applying MSCW method and T-Shirt method
-                to prioritise features of a project
-              </p>
-            </div>
-            <div className='grid-item item6'>
-              <a href='https://pizzii.github.io/Task-tracker/'>Task Tracker</a>
-              <p className='para1'> Reactjs, Context Api, Css</p>
-              <p className='para2'>
-                Task tracker is an app that i built using a mock api that i
-                hosted on github so I implemented the CRUD method on the Api.
-                Basically the app is to keep remindal of task to be done by
-                users
-              </p>
-            </div>
+            <Slider {...settings}>
+              {data.map((d) => (
+                <div
+                  className='project-card'
+                  key={d.id}
+                  onClick={() => handleClick(d.url)}
+                >
+                  <div>
+                    <img src={d.img} alt='' className='p-img' />
+                  </div>
+                  <div>
+                    <p className='p-name'>{d.name}</p>
+                    <p>{d.review}</p>
+                    <button
+                      onClick={() => handleClick(d.url)}
+                      className='seemore-btn'
+                    >
+                      see more....
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>
@@ -92,4 +56,41 @@ const Project = ({ theme }) => {
   );
 };
 
+const data = [
+  {
+    id: 1,
+    name: `Exqure`,
+    img: `/project/Screenshot (162).png`,
+    review: `   Exqure is a third party app like an escrow where we provide user
+                with full confidence and security. My task in exqure project was
+                to develop the frontend designed by product designers of the
+                project and connect it with the Api provided by the backend
+                developers.`,
+    url: `https://exqure16.github.io/frontend/`,
+  },
+  {
+    id: 2,
+    name: `Task tracker`,
+    img: `/project/Screenshot (164).png`,
+    review: `Task tracker is an app that I built using a mock api that i
+                hosted on github so I implemented the CRUD method on the Api.
+                Basically the app is to keep remindal of task to be done by
+                users`,
+    url: `https://reginaldejike.github.io/Task-tracker/`,
+  },
+  {
+    id: 3,
+    name: `Movie box`,
+    img: `/project/Screenshot (165).png`,
+    review: `It a movie app that shows lates movies`,
+    url: `https://reginaldejike.github.io/MovieBox/`,
+  },
+  {
+    id: 4,
+    name: `Portfolio`,
+    img: `/project/screenshot (167).png`,
+    review: `Its an app that contain details about myself and some of my achievements`,
+    url: `https://reginaldejike.netlify.app/`,
+  },
+];
 export default Project;

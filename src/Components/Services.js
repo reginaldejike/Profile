@@ -9,7 +9,7 @@ import { CgWebsite } from 'react-icons/cg';
 const Services = ({ theme }) => {
   return (
     <>
-      <div className={theme === 'light' ? 'services' : 'dark'} id='services'>
+      <div className='services' id='services'>
         <div className='container'>
           <h1>Services I Render</h1>
           <p className='s-header'>

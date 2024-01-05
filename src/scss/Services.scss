@@ -1,11 +1,9 @@
 @import 'utilities';
-.dark {
-  background-color: #333;
-  color: #fff;
-}
+@import 'index';
+
 .services {
   height: 1000px;
-  background: #fbfcfe;
+  background-color: var(--body_background);
   padding-top: 70px;
 
   h1 {
@@ -13,6 +11,7 @@
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -0.03em;
+    color: var(--body_color);
   }
 
   .s-header {
@@ -22,7 +21,7 @@
     font-weight: 300;
     font-style: normal;
     line-height: 27px;
-    color: #000;
+    color: var(--body_color);
   }
 
   &-content {

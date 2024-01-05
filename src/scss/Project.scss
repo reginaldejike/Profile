@@ -1,14 +1,8 @@
 @import 'utilities';
-
-.dark {
-  background-color: #333;
-  color: #fff;
-}
+@import 'index';
 
 .project {
-  height: 1793px;
-  background: #fbfcfe;
-  overflow: none;
+  background-color: var(--body_background);
 
   h1 {
     font-size: 48px;
@@ -16,7 +10,7 @@
     line-height: 65.57px;
     font-family: Playfair;
     letter-spacing: -0.03em;
-    color: #000;
+    color: var(--body_color);
     margin-top: 113px;
   }
 
@@ -26,18 +20,45 @@
     font-weight: 700;
     // line-height: 66px;
     letter-spacing: 0.03em;
-    color: #000;
+    color: var(--body_color);
     margin-top: 6px;
     margin-bottom: 70px;
   }
 
   &-content {
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 4;
-    // background-color: green;
-    gap: 20px;
-    padding: 20px;
+    .slick-slide > div {
+      margin: 0 10px;
+    }
+    .project-card {
+      width: 700px;
+      height: 500px;
+      padding: 10px;
+      color: var(--body_color);
+      border: 1px solid #2351dc;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        transform: scale(0.99);
+      }
+      .p-name {
+        font-size: 30px;
+        text-decoration: underline;
+      }
+      .p-img {
+        width: 300px;
+        height: 200px;
+      }
+      .seemore-btn {
+        background: none;
+        outline: none;
+        border: none;
+        color: var(--body_color);
+        &:hover {
+          color: var(--link_hover);
+          transform: scale(0.98);
+        }
+      }
+    }
 
     .grid-item {
       // background-color: blue;

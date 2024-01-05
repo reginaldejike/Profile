@@ -1,16 +1,15 @@
 @import 'utilities';
+@import 'index';
 
-.dark {
-  background-color: #333;
-  color: #fff;
+.about {
+  background-color: var(--body_background);
 }
-.light {
-  background-color: #f6f8fe;
-  color: #333;
+.skills {
+  background-color: var(--body_background);
 }
 
 .aboutme {
-  height: 550px;
+  height: 570px;
 
   .heading {
     font-size: 48px;
@@ -19,17 +18,19 @@
     display: flex;
     justify-content: center;
     margin-top: 90px;
+    color: var(--body_color);
   }
 
   .para1 {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     font-family: Playfair;
     font-style: none;
     line-height: 28px;
-    width: 465px;
+    width: 490px;
     margin: auto;
+    color: var(--body_color);
   }
 
   ul {
@@ -43,7 +44,7 @@
     padding-right: 20px;
 
     .github {
-      color: rgb(26, 24, 24);
+      color: var(--body_color);
       font-size: 3rem;
     }
     .linkedin {
@@ -70,7 +71,6 @@
 }
 
 .myskill {
-  // background: #ffffff;
   height: 698px;
 
   h2 {
@@ -78,21 +78,14 @@
     font-weight: 700;
     font-family: Playfair;
     margin-top: 96px;
+    color: var(--body_color);
   }
 
   .skill-subheading {
     font-size: 18px;
     font-weight: 500;
     font-family: Playfair;
-    color: #4d4d4d;
-    font-style: normal;
-  }
-
-  .skill-darkmode {
-    font-size: 18px;
-    font-weight: 500;
-    font-family: Playfair;
-    color: #fff;
+    color: var(--skill_color);
     font-style: normal;
   }
 
@@ -105,15 +98,7 @@
       font-size: 18px;
       font-weight: 500;
       font-family: Playfair;
-      color: #4d4d4d;
-      font-style: normal;
-    }
-
-    .icon-header-darkmode {
-      font-size: 18px;
-      font-weight: 500;
-      font-family: Playfair;
-      color: #fff;
+      color: var(--skill_color);
       font-style: normal;
     }
 

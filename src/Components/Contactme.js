@@ -41,7 +41,7 @@ const Contactme = ({ theme }) => {
     <>
       <div className='contact' id='contactme'>
         <div className='contact-content'>
-          <div className={theme === 'light' ? 'info' : 'dark'}>
+          <div className='info'>
             <h1>Get In Touch</h1>
             <p>
               Please feel free to get in touch with me whenever my services are

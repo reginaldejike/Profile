@@ -10,92 +10,54 @@ import { BsMicrosoft } from 'react-icons/bs';
 const Skills = ({ theme }) => {
   return (
     <>
-      <div className={theme === 'light' ? 'light' : 'dark'}>
-        <div className='myskill'>
-          <div className='container'>
-            <h2>My SkillS</h2>
-            <p
-              className={
-                theme === 'light' ? 'skill-subheading' : 'skill-darkmode'
-              }
-            >
-              Here are a few skills I possess
-            </p>
-            <div className='myskill-content'>
-              <div className='first-flex'>
-                <div className='skill-item'>
-                  <div className='logo'>
-                    <DiJavascript1 />
+      <div className='skills'>
+        <div className=''>
+          <div className='myskill'>
+            <div className='container'>
+              <h2>My Skills</h2>
+              <p className='skill-subheading'>
+                Here are a few skills I possess
+              </p>
+              <div className='myskill-content'>
+                <div className='first-flex'>
+                  <div className='skill-item'>
+                    <div className='logo'>
+                      <DiJavascript1 />
+                    </div>
+                    <p className={'icon-header'}>JavaScript</p>
                   </div>
-                  <p
-                    className={
-                      theme === 'light' ? 'icon-header' : 'icon-header-darkmode'
-                    }
-                  >
-                    JavaScript
-                  </p>
+                  <div className='skill-item'>
+                    <div className='logo'>
+                      <FaReact />
+                    </div>
+                    <p className={'icon-header'}>ReactJs</p>
+                  </div>
+                  <div className='skill-item'>
+                    <div className='logo'>
+                      <FaHtml5 />
+                    </div>
+                    <p className={'icon-header'}>Html5</p>
+                  </div>
                 </div>
-                <div className='skill-item'>
-                  <div className='logo'>
-                    <FaReact />
+                <div className='second-flex'>
+                  <div className='skill-item'>
+                    <div className='logo'>
+                      <FaBootstrap />
+                    </div>
+                    <p className={'icon-header'}>Bootstrap</p>
                   </div>
-                  <p
-                    className={
-                      theme === 'light' ? 'icon-header' : 'icon-header-darkmode'
-                    }
-                  >
-                    ReactJs
-                  </p>
-                </div>
-                <div className='skill-item'>
-                  <div className='logo'>
-                    <FaHtml5 />
+                  <div className='skill-item'>
+                    <div className='logo'>
+                      <FaSass />
+                    </div>
+                    <p className={'icon-header'}>Scss {'(Sass)'}</p>
                   </div>
-                  <p
-                    className={
-                      theme === 'light' ? 'icon-header' : 'icon-header-darkmode'
-                    }
-                  >
-                    Html5
-                  </p>
-                </div>
-              </div>
-              <div className='second-flex'>
-                <div className='skill-item'>
-                  <div className='logo'>
-                    <FaBootstrap />
+                  <div className='skill-item'>
+                    <div className='logo'>
+                      <BsMicrosoft />
+                    </div>
+                    <p className={'icon-header'}>Microsoft Office</p>
                   </div>
-                  <p
-                    className={
-                      theme === 'light' ? 'icon-header' : 'icon-header-darkmode'
-                    }
-                  >
-                    Bootstrap
-                  </p>
-                </div>
-                <div className='skill-item'>
-                  <div className='logo'>
-                    <FaSass />
-                  </div>
-                  <p
-                    className={
-                      theme === 'light' ? 'icon-header' : 'icon-header-darkmode'
-                    }
-                  >
-                    Scss {'(Sass)'}
-                  </p>
-                </div>
-                <div className='skill-item'>
-                  <div className='logo'>
-                    <BsMicrosoft />
-                  </div>
-                  <p
-                    className={
-                      theme === 'light' ? 'icon-header' : 'icon-header-darkmode'
-                    }
-                  >
-                    Microsoft Office
-                  </p>
                 </div>
               </div>
             </div>
