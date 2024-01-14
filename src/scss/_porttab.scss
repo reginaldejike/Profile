@@ -3,12 +3,13 @@
     height: 800px;
     width: 100%;
     overflow: auto;
-
     nav {
+      .mobile-view {
+        background: #f4f4f4;
+      }
       .mainmenu {
         display: none;
       }
-
       .mainmenu-mobile {
         position: absolute;
         display: grid;
@@ -17,11 +18,10 @@
         top: 50px;
         transition: all 0.5s ease-out;
         width: 100%;
-        height: 30vh;
+        height: 40vh;
 
-        li {
+        .link-item {
           list-style: none;
-          text-align: center;
           padding-top: 20px;
           width: 100%;
           transition: all 0.5s ease;
@@ -31,8 +31,8 @@
           display: inline-block;
           text-decoration: none;
           color: #000;
-          font-size: 23px;
-          font-weight: 600;
+          font-size: 18px;
+          font-weight: 400;
           font-family: Playfair;
         }
         a:hover {
@@ -43,14 +43,21 @@
       .mobile-view-icon {
         display: block;
         position: absolute;
-        font-size: 50px;
+        font-size: 45px;
         border: none;
         outline: none;
-        top: 15px;
         right: 25px;
-        background-color: #f4f4f4;
+        color: var(--body_color);
+        background-color: inherit;
         cursor: pointer;
       }
+    }
+
+    .btn {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
     }
 
     &-content {

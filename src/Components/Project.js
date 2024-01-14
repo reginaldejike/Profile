@@ -15,6 +15,15 @@ const Project = () => {
     centerPadding: '60px',
     slidesToShow: 3,
     speed: 500,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>

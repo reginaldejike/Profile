@@ -30,50 +30,52 @@ function Header({ theme, setTheme }) {
     <>
       <header>
         <div className='showcase'>
-          <nav className={scrolled ? 'scrolled' : ''}>
-            <Link to='#' className='logo'>
-              Reginald
-            </Link>
-            <ul
-              className={!isMobile ? 'mainmenu' : 'mainmenu-mobile'}
-              onClick={() => setIsMobile(false)}
-            >
-              <Link to='#aboutme' className='link-item'>
-                About Me
+          <div className={!isMobile ? 'mobile-view' : ''}>
+            <nav className={scrolled ? 'scrolled' : ''}>
+              <Link to='#' className={'logo'}>
+                Reginald
               </Link>
+              <ul
+                className={!isMobile ? 'mainmenu' : 'mainmenu-mobile'}
+                onClick={() => setIsMobile(false)}
+              >
+                <Link to='#aboutme' className='link-item'>
+                  About Me
+                </Link>
 
-              <Link to='#services' className='link-item'>
-                Services
-              </Link>
+                <Link to='#services' className='link-item'>
+                  Services
+                </Link>
 
-              <Link to='#project' className='link-item'>
-                Projects
-              </Link>
+                <Link to='#project' className='link-item'>
+                  Projects
+                </Link>
 
-              <Link to='#contactme' className='link-item'>
-                Contact Me
-              </Link>
-              <Darkmode />
-            </ul>
-            <button
-              className='mobile-view-icon'
-              onClick={() => setIsMobile(!isMobile)}
-            >
-              {isMobile ? (
-                <>
-                  <div className='openmenu'>
-                    <IoIosClose />
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className='closemenu'>
-                    <RxHamburgerMenu />
-                  </div>
-                </>
-              )}
-            </button>
-          </nav>
+                <Link to='#contactme' className='link-item'>
+                  Contact Me
+                </Link>
+                <Darkmode />
+              </ul>
+              <button
+                className='mobile-view-icon'
+                onClick={() => setIsMobile(!isMobile)}
+              >
+                {isMobile ? (
+                  <>
+                    <div className='openmenu'>
+                      <IoIosClose />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className='closemenu'>
+                      <RxHamburgerMenu />
+                    </div>
+                  </>
+                )}
+              </button>
+            </nav>
+          </div>
           <div className='container'>
             <div className='showcase-content'>
               <div className='intro'>
@@ -106,7 +108,12 @@ function Header({ theme, setTheme }) {
                     </a>
                   </li>
                 </ul>
-                <Button text={'Hire Me'} textColor={'#fff'} color={'#1c41b0'} />
+                <Button
+                  text={'Hire Me'}
+                  textColor={'#fff'}
+                  color={'#1c41b0'}
+                  margin={'auto'}
+                />
               </div>
               <img src={me} alt='Myself' className='myself' />
             </div>

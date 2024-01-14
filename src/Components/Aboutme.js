@@ -47,9 +47,12 @@ const Aboutme = ({ theme }) => {
                   </a>
                 </li>
               </ul>
-              <div className='hire-btn'>
-                <Button text={'Hire Me'} textColor={'#fff'} color={'#1c41b0'} />
-              </div>
+              <Button
+                text={'Hire Me'}
+                textColor={'#fff'}
+                color={'#1c41b0'}
+                margin={'auto'}
+              />
             </div>
           </div>
         </div>
