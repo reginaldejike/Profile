@@ -1,11 +1,10 @@
-@import 'index';
+@import "index";
 @media (max-width: 480px) {
   //mobile design for header
 
   .showcase {
-    height: 700px;
-    width: 100%;
-    overflow: auto;
+    height: 500px;
+    // overflow: auto;
     nav {
       .mobile-view {
         background: #f4f4f4;
@@ -92,13 +91,13 @@
       }
     }
   }
+
   //mobile design for about me
   .aboutme {
-    height: 980px;
     width: 100%;
 
     .heading {
-      margin-top: 90px;
+      // margin-top: 90px;
       font-size: 38px;
       font-weight: 700;
     }
@@ -139,6 +138,17 @@
       }
     }
   }
+
+  .project {
+    &-content {
+      .project-card {
+        .p-img {
+          width: 100%;
+          min-width: 10.7rem;
+        }
+      }
+    }
+  }
   //mobile design for services
   .services {
     width: 100%;
@@ -163,21 +173,18 @@
   }
   //mobile design for project
   .project {
-    height: 1100px;
-    width: 100%;
-
     h1 {
       font-size: 38px;
     }
 
     &-content {
       .project-card {
-        width: 100%;
-        height: 700px;
+        // width: 100%;
+        // height: 700px;
 
-        .p-img {
-          width: 100%;
-        }
+        // .p-img {
+        //   width: 100%;
+        // }
       }
     }
   }

@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 760px) {
   .showcase {
     height: 800px;
     width: 100%;
@@ -18,7 +18,6 @@
         top: 50px;
         transition: all 0.5s ease-out;
         width: 100%;
-        height: 40vh;
 
         .link-item {
           list-style: none;
@@ -87,7 +86,7 @@
   }
 
   .aboutme {
-    height: 440px;
+    // height: 440px;
     .heading {
       font-size: 50px;
       margin-top: 100px;
@@ -112,46 +111,8 @@
     }
   }
 
-  .project {
-    height: 2900px;
-    width: 100%;
-
-    &-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 30px;
-
-      .item1 {
-        width: 488px;
-        height: 400px;
-      }
-      .item2 {
-        width: 488px;
-        height: 400px;
-      }
-      .item3 {
-        width: 488px;
-        height: 400px;
-      }
-      .item4 {
-        width: 488px;
-        height: 400px;
-      }
-      .item5 {
-        width: 488px;
-        height: 400px;
-      }
-      .item6 {
-        width: 488px;
-        height: 400px;
-      }
-    }
-  }
-
   .services {
-    height: 1500px;
+    // height: 1500px;
     .s-header {
       font-size: 20px;
       font-weight: 350px;
@@ -180,10 +141,10 @@
 
     .service-info {
       width: 100%;
-      margin-top: 30px;
+      // margin-top: 30px;
 
       .btn {
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
       }
     }
   }

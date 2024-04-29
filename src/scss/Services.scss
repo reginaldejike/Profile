@@ -1,8 +1,8 @@
-@import 'utilities';
-@import 'index';
+@import "utilities";
+@import "index";
 
 .services {
-  height: 1000px;
+  min-height: 1000px;
   background-color: var(--body_background);
   padding-top: 70px;
 
@@ -64,6 +64,6 @@
     }
   }
 }
-@import 'mobile';
-@import 'porttab';
-@import 'tablet';
+@import "mobile";
+@import "porttab";
+@import "tablet";

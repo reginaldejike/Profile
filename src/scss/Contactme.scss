@@ -1,8 +1,8 @@
-@import 'utilities';
-@import 'index';
+@import "utilities";
+@import "index";
 
 .contact {
-  height: 650px;
+  min-height: 650px;
 
   &-content {
     display: flex;
@@ -283,6 +283,6 @@
     }
   }
 }
-@import 'mobile';
-@import 'tablet';
-@import 'portTab';
+@import "mobile";
+@import "tablet";
+@import "portTab";

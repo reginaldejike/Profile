@@ -1,10 +1,10 @@
-import React from 'react';
-import '../css/Button.css';
+import React from "react";
+import "../scss/Button.scss";
 
 const Button = ({ color, textColor, text, margin }) => {
   return (
     <button
-      className='btn'
+      className="btn"
       style={{
         background: color,
         color: textColor,
