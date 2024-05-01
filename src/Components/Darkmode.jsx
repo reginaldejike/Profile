@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/darkmde.scss";
+import "../scss/darkmde.css";
 import { BsSun } from "react-icons/bs";
 import { BsMoon } from "react-icons/bs";
 

@@ -1,4 +1,4 @@
-import "../scss/Header.scss";
+import "../scss/Header.css";
 import me from "../assets/edited.png";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";

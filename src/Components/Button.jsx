@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/Button.scss";
+import "../scss/Button.css";
 
 const Button = ({ color, textColor, text, margin }) => {
   return (

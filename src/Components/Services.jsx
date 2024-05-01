@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/Services.scss";
+import "../scss/Services.css";
 import { GiTeacher } from "react-icons/gi";
 import { IoIosBusiness } from "react-icons/io";
 import { BsTools } from "react-icons/bs";
