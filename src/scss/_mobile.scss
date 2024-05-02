@@ -1,103 +1,9 @@
 @import "index";
 @media (max-width: 480px) {
-  //mobile design for header
-
-  .showcase {
-    height: 500px;
-    // overflow: auto;
-    nav {
-      .mobile-view {
-        background: #f4f4f4;
-      }
-      .mainmenu {
-        display: none;
-      }
-      .mainmenu-mobile {
-        position: absolute;
-        display: grid;
-        background-color: #f4f4f4;
-        left: 0;
-        top: 50px;
-        transition: all 0.5s ease-out;
-        width: 100%;
-        height: 40vh;
-
-        .link-item {
-          list-style: none;
-          padding-top: 20px;
-          width: 100%;
-          transition: all 0.5s ease;
-        }
-
-        a {
-          display: inline-block;
-          text-decoration: none;
-          color: #000;
-          font-size: 18px;
-          font-weight: 400;
-          font-family: Playfair;
-        }
-        a:hover {
-          color: rgb(79, 116, 116);
-        }
-      }
-
-      .mobile-view-icon {
-        display: block;
-        position: absolute;
-        font-size: 45px;
-        border: none;
-        outline: none;
-        right: 25px;
-        color: var(--body_color);
-        background-color: inherit;
-        cursor: pointer;
-      }
-    }
-
-    .btn {
-      width: 40%;
-      display: flex;
-      justify-content: center;
-      margin: auto;
-    }
-
-    &-content {
-      display: grid;
-      grid-template-columns: 1fr, 1fr;
-      justify-content: center;
-      margin-top: 70px;
-
-      h3 {
-        text-align: center;
-      }
-
-      p {
-        text-align: center;
-        margin: auto;
-      }
-
-      ul {
-        justify-content: center;
-      }
-
-      .myself {
-        width: 70%;
-        margin: auto;
-        margin-top: 20px;
-      }
-      :nth-child(2) {
-        grid-row: 1;
-      }
-    }
-  }
-
   //mobile design for about me
   .aboutme {
-    width: 100%;
-
     .heading {
-      // margin-top: 90px;
+      margin-top: unset;
       font-size: 38px;
       font-weight: 700;
     }
@@ -116,7 +22,7 @@
 
   .myskill {
     width: 100%;
-    height: 600px;
+    min-height: 400px;
 
     h2 {
       font-size: 38px;
@@ -144,13 +50,14 @@
       .project-card {
         .p-img {
           width: 100%;
-          min-width: 10.7rem;
+          min-width: 7rem;
         }
       }
     }
   }
   //mobile design for services
   .services {
+    padding-top: 15px;
     width: 100%;
     height: 1780px;
     h1 {
@@ -177,24 +84,20 @@
       font-size: 38px;
     }
 
-    // &-content {
-    //   // .project-card {
-    //   //   // width: 100%;
-    //   //   // height: 700px;
+    &-content {
+      .project-card {
+        width: 100%;
+        height: 700px;
 
-    //   //   // .p-img {
-    //   //   //   width: 100%;
-    //   //   // }
-    //   // }
-    // }
+        .p-img {
+          width: 100%;
+        }
+      }
+    }
   }
   //mobile design for contact
   .contact {
-    max-width: 100%;
-    // margin-top: 50px;
     &-content {
-      display: grid;
-
       .info {
         width: 100%;
         padding-left: 20px;
@@ -209,7 +112,7 @@
 
     .service-info {
       width: 100%;
-      padding-top: 100px;
+      padding-top: 20px;
       padding-left: 30px;
       padding-right: 40px;
     }

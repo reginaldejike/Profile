@@ -1,66 +1,7 @@
 @media (max-width: 760px) {
   .showcase {
-    height: 800px;
-    width: 100%;
-    overflow: auto;
-    nav {
-      .mobile-view {
-        background: #f4f4f4;
-      }
-      .mainmenu {
-        display: none;
-      }
-      .mainmenu-mobile {
-        position: absolute;
-        display: grid;
-        background-color: #f4f4f4;
-        left: 0;
-        top: 50px;
-        transition: all 0.5s ease-out;
-        width: 100%;
-
-        .link-item {
-          list-style: none;
-          padding-top: 20px;
-          width: 100%;
-          transition: all 0.5s ease;
-        }
-
-        a {
-          display: inline-block;
-          text-decoration: none;
-          color: #000;
-          font-size: 18px;
-          font-weight: 400;
-          font-family: Playfair;
-        }
-        a:hover {
-          color: rgb(79, 116, 116);
-        }
-      }
-
-      .mobile-view-icon {
-        display: block;
-        position: absolute;
-        font-size: 45px;
-        border: none;
-        outline: none;
-        right: 25px;
-        color: var(--body_color);
-        background-color: inherit;
-        cursor: pointer;
-      }
-    }
-
-    .btn {
-      width: 40%;
-      display: flex;
-      justify-content: center;
-      margin: auto;
-    }
-
     &-content {
-      display: grid;
+      flex-flow: column-reverse;
       justify-content: center;
       margin-top: 30px;
 
@@ -75,12 +16,6 @@
 
       ul {
         justify-content: center;
-      }
-
-      img {
-        width: 40%;
-        margin: auto;
-        margin-top: 20px;
       }
     }
   }
@@ -99,8 +34,6 @@
   }
 
   .myskill {
-    width: 100%;
-
     .skill-subheading {
       font-size: 20px;
     }
@@ -112,15 +45,9 @@
   }
 
   .services {
-    // height: 1500px;
     .s-header {
       font-size: 20px;
       font-weight: 350px;
-    }
-    &-content {
-      .Row {
-        display: grid;
-      }
     }
   }
 
@@ -141,11 +68,6 @@
 
     .service-info {
       width: 100%;
-      // margin-top: 30px;
-
-      .btn {
-        // margin-bottom: 30px;
-      }
     }
   }
 }

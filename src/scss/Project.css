@@ -85,7 +85,7 @@ code {
 }
 .project-content .project-card {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   padding: 10px;
   color: var(--body_color);
   border: 1px solid #2351dc;
@@ -119,6 +119,149 @@ code {
   transform: scale(0.98);
 }
 
+@media (max-width: 1025px) {
+  .showcase nav .mobile-view {
+    background: #f4f4f4;
+  }
+  .showcase nav .mainmenu {
+    display: none;
+  }
+  .showcase nav .mainmenu-mobile {
+    position: absolute;
+    display: grid;
+    background-color: #f4f4f4;
+    left: 0;
+    top: 50px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .showcase nav .mainmenu-mobile .link-item {
+    list-style: none;
+    padding-top: 20px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .showcase nav .mainmenu-mobile a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Playfair;
+  }
+  .showcase nav .mainmenu-mobile a:hover {
+    color: rgb(79, 116, 116);
+  }
+  .showcase nav .mobile-view-icon {
+    display: block;
+    position: absolute;
+    font-size: 45px;
+    border: none;
+    outline: none;
+    right: 25px;
+    color: var(--body_color);
+    background-color: inherit;
+    cursor: pointer;
+  }
+  .showcase .btn {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .showcase-content {
+    margin-top: 90px;
+  }
+  .showcase-content h3 {
+    text-align: center;
+  }
+  .showcase-content p {
+    text-align: center;
+    margin: auto;
+  }
+  .showcase-content ul {
+    justify-content: center;
+  }
+  .showcase-content .myself {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .showcase-content :nth-child(2) {
+    grid-row: 1;
+  }
+  .services-content .Row {
+    display: grid;
+  }
+  .contact {
+    max-width: 100%;
+  }
+  .contact-content {
+    display: grid;
+  }
+  .contact-content .info {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .contact-content .info h1 {
+    font-size: 30px;
+  }
+  .contact .service-info {
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .showcase-content {
+    flex-flow: column-reverse;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .showcase-content h3 {
+    text-align: center;
+  }
+  .showcase-content p {
+    text-align: center;
+    margin: auto;
+  }
+  .showcase-content ul {
+    justify-content: center;
+  }
+  .aboutme .heading {
+    font-size: 50px;
+    margin-top: 100px;
+  }
+  .aboutme .para1 {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .myskill .skill-subheading {
+    font-size: 20px;
+  }
+  .myskill .icon-header {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .services .s-header {
+    font-size: 20px;
+    font-weight: 350px;
+  }
+  .contact {
+    max-width: 100%;
+  }
+  .contact-content {
+    display: grid;
+  }
+  .contact-content .info {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .contact-content .info h1 {
+    font-size: 30px;
+  }
+  .contact .service-info {
+    width: 100%;
+  }
+}
 :root {
   --body_background: #fff;
   --body_color: black;
@@ -157,89 +300,8 @@ code {
 }
 
 @media (max-width: 480px) {
-  .showcase {
-    height: 700px;
-    width: 100%;
-  }
-  .showcase nav .mobile-view {
-    background: #f4f4f4;
-  }
-  .showcase nav .mainmenu {
-    display: none;
-  }
-  .showcase nav .mainmenu-mobile {
-    position: absolute;
-    display: grid;
-    background-color: #f4f4f4;
-    left: 0;
-    top: 50px;
-    transition: all 0.5s ease-out;
-    width: 100%;
-    height: 40vh;
-  }
-  .showcase nav .mainmenu-mobile .link-item {
-    list-style: none;
-    padding-top: 20px;
-    width: 100%;
-    transition: all 0.5s ease;
-  }
-  .showcase nav .mainmenu-mobile a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Playfair;
-  }
-  .showcase nav .mainmenu-mobile a:hover {
-    color: rgb(79, 116, 116);
-  }
-  .showcase nav .mobile-view-icon {
-    display: block;
-    position: absolute;
-    font-size: 45px;
-    border: none;
-    outline: none;
-    right: 25px;
-    color: var(--body_color);
-    background-color: inherit;
-    cursor: pointer;
-  }
-  .showcase .btn {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  .showcase-content {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    justify-content: center;
-    margin-top: 70px;
-  }
-  .showcase-content h3 {
-    text-align: center;
-  }
-  .showcase-content p {
-    text-align: center;
-    margin: auto;
-  }
-  .showcase-content ul {
-    justify-content: center;
-  }
-  .showcase-content .myself {
-    width: 70%;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .showcase-content :nth-child(2) {
-    grid-row: 1;
-  }
-  .aboutme {
-    height: 980px;
-    width: 100%;
-  }
   .aboutme .heading {
+    margin-top: unset;
     font-size: 38px;
     font-weight: 700;
   }
@@ -254,7 +316,7 @@ code {
   }
   .myskill {
     width: 100%;
-    height: 600px;
+    min-height: 400px;
   }
   .myskill h2 {
     font-size: 38px;
@@ -273,7 +335,12 @@ code {
     font-size: 15px;
     padding-top: 20px;
   }
+  .project-content .project-card .p-img {
+    width: 100%;
+    min-width: 7rem;
+  }
   .services {
+    padding-top: 15px;
     width: 100%;
     height: 1780px;
   }
@@ -294,11 +361,12 @@ code {
   .project h1 {
     font-size: 38px;
   }
-  .contact {
-    max-width: 100%;
+  .project-content .project-card {
+    width: 100%;
+    height: 700px;
   }
-  .contact-content {
-    display: grid;
+  .project-content .project-card .p-img {
+    width: 100%;
   }
   .contact-content .info {
     width: 100%;
@@ -311,238 +379,8 @@ code {
   }
   .contact .service-info {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-left: 30px;
     padding-right: 40px;
-  }
-}
-@media (max-width: 1025px) {
-  .showcase {
-    height: 1000px;
-    width: 100%;
-    overflow: auto;
-  }
-  .showcase nav .mobile-view {
-    background: #f4f4f4;
-  }
-  .showcase nav .mainmenu {
-    display: none;
-  }
-  .showcase nav .mainmenu-mobile {
-    position: absolute;
-    display: grid;
-    background-color: #f4f4f4;
-    left: 0;
-    top: 50px;
-    transition: all 0.5s ease-out;
-    width: 100%;
-    height: 40vh;
-  }
-  .showcase nav .mainmenu-mobile .link-item {
-    list-style: none;
-    padding-top: 20px;
-    width: 100%;
-    transition: all 0.5s ease;
-  }
-  .showcase nav .mainmenu-mobile a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Playfair;
-  }
-  .showcase nav .mainmenu-mobile a:hover {
-    color: rgb(79, 116, 116);
-  }
-  .showcase nav .mobile-view-icon {
-    display: block;
-    position: absolute;
-    font-size: 45px;
-    border: none;
-    outline: none;
-    right: 25px;
-    color: var(--body_color);
-    background-color: inherit;
-    cursor: pointer;
-  }
-  .showcase .btn {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  .showcase-content {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    justify-content: center;
-    margin-top: 90px;
-  }
-  .showcase-content h3 {
-    text-align: center;
-  }
-  .showcase-content p {
-    text-align: center;
-    margin: auto;
-  }
-  .showcase-content ul {
-    justify-content: center;
-  }
-  .showcase-content .myself {
-    width: 60%;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .showcase-content :nth-child(2) {
-    grid-row: 1;
-  }
-  .myskill {
-    width: 100%;
-  }
-  .services-content .Row {
-    display: grid;
-  }
-  .contact {
-    max-width: 100%;
-    margin-top: 30px;
-  }
-  .contact-content {
-    display: grid;
-  }
-  .contact-content .info {
-    width: 100%;
-    padding: 0 30px;
-  }
-  .contact-content .info h1 {
-    font-size: 30px;
-  }
-  .contact .service-info {
-    width: 100%;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 760px) {
-  .showcase {
-    width: 100%;
-    overflow: auto;
-  }
-  .showcase nav .mobile-view {
-    background: #f4f4f4;
-  }
-  .showcase nav .mainmenu {
-    display: none;
-  }
-  .showcase nav .mainmenu-mobile {
-    position: absolute;
-    display: grid;
-    background-color: #f4f4f4;
-    left: 0;
-    top: 50px;
-    transition: all 0.5s ease-out;
-    width: 100%;
-    height: 40vh;
-  }
-  .showcase nav .mainmenu-mobile .link-item {
-    list-style: none;
-    padding-top: 20px;
-    width: 100%;
-    transition: all 0.5s ease;
-  }
-  .showcase nav .mainmenu-mobile a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Playfair;
-  }
-  .showcase nav .mainmenu-mobile a:hover {
-    color: rgb(79, 116, 116);
-  }
-  .showcase nav .mobile-view-icon {
-    display: block;
-    position: absolute;
-    font-size: 45px;
-    border: none;
-    outline: none;
-    right: 25px;
-    color: var(--body_color);
-    background-color: inherit;
-    cursor: pointer;
-  }
-  .showcase .btn {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  .showcase-content {
-    display: grid;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .showcase-content h3 {
-    text-align: center;
-  }
-  .showcase-content p {
-    text-align: center;
-    margin: auto;
-  }
-  .showcase-content ul {
-    justify-content: center;
-  }
-  .showcase-content img {
-    width: 40%;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .aboutme .heading {
-    font-size: 50px;
-    margin-top: 100px;
-  }
-  .aboutme .para1 {
-    font-size: 20px;
-    font-weight: 550;
-  }
-  .myskill {
-    width: 100%;
-  }
-  .myskill .skill-subheading {
-    font-size: 20px;
-  }
-  .myskill .icon-header {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .project .project-card .p-img {
-    width: 17.7rem;
-    min-height: 200px;
-  }
-  .services .s-header {
-    font-size: 20px;
-    font-weight: 350px;
-  }
-  .services-content .Row {
-    display: grid;
-  }
-  .contact {
-    max-width: 100%;
-  }
-  .contact-content {
-    display: grid;
-  }
-  .contact-content .info {
-    width: 100%;
-    padding: 0 30px;
-  }
-  .contact-content .info h1 {
-    font-size: 30px;
-  }
-  .contact .service-info {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .contact .service-info .btn {
-    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=Project.css.map */
