@@ -4,7 +4,7 @@ import { BsTelephoneInbound } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
-import "../scss/Contactme.css";
+import "../scss/Contactme.scss";
 
 const Contactme = ({ theme }) => {
   const [fullName, setFullName] = useState("");

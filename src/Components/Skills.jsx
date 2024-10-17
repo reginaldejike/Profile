@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/About.css";
+import "../scss/About.scss";
 import { FaSass } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
 import { FaHtml5 } from "react-icons/fa";

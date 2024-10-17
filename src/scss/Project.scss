@@ -43,6 +43,8 @@
       width: 100%;
       min-height: 500px;
       padding: 10px;
+      display: flex;
+      flex-direction: column;
       color: var(--body_color);
       border: 1px solid #2351dc;
       border-radius: 5px;
@@ -63,10 +65,14 @@
       p {
         font-family: Playfair;
       }
+      .btn-container {
+        margin-top: auto;
+      }
       .seemore-btn {
         background: none;
         outline: none;
         border: none;
+        margin-top: auto;
         color: var(--body_color);
         &:hover {
           color: var(--link_hover);

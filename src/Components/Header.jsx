@@ -1,15 +1,15 @@
-import "../scss/Header.css";
+import "../scss/Header.scss";
 import me from "../assets/edited.png";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillTwitterSquare } from "react-icons/ai";
-// import { AiFillSquareXTwitter } from 'react-icons/ai';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosClose } from "react-icons/io";
 import { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Button from "./Button";
 import Darkmode from "./Darkmode";
+import mylogo from '/mylogo.png'
 
 function Header() {
   const [isMobile, setIsMobile] = useState(false);
@@ -33,7 +33,7 @@ function Header() {
           <div className={!isMobile ? "mobile-view" : ""}>
             <nav className={scrolled ? "scrolled" : ""}>
               <Link to="#" className={"logo"}>
-                Reginald
+                <img src={mylogo} alt="Logo " />
               </Link>
               <ul
                 className={!isMobile ? "mainmenu" : "mainmenu-mobile"}

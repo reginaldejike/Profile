@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/About.css";
+import "../scss/About.scss";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillTwitterSquare } from "react-icons/ai";

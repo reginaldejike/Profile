@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../scss/Project.css";
+import "../scss/Project.scss";
 
 const Project = () => {
   const handleClick = (url) => {
@@ -61,12 +61,14 @@ const Project = () => {
                   <div>
                     <p className="p-name">{card.name}</p>
                     <p>{card.review}</p>
-                    <button
-                      onClick={() => handleClick(card.url)}
-                      className="seemore-btn"
-                    >
-                      see more....
-                    </button>
+                    <div className="btn-container">
+                      <button
+                        onClick={() => handleClick(card.url)}
+                        className="seemore-btn"
+                      >
+                        see more....
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -113,6 +115,13 @@ const data = [
     img: `/project/Screenshot3.png`,
     review: `Its an app that contain details about myself and some of my achievements`,
     url: `https://reginaldejike.netlify.app/`,
+  },
+  {
+    id: 5,
+    name: `Itunes`,
+    img: `/project/Screenshot5.png`,
+    review: `Its an app the showcase list of product and their prices. Responsive design`,
+    url: `https://itunes-alpha.vercel.app/`,
   },
 ];
 export default Project;

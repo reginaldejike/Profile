@@ -16,21 +16,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    padding: 1rem 30px;
     position: fixed;
-    width: 100%;
-    padding: 0 30px;
+    width: 100%; 
     margin: 0 auto;
     transition: background-color 0.3s ease;
     z-index: 1000;
 
     .logo {
-      font-weight: 400;
-      font-size: 25px;
-      font-family: Playfair;
-      list-style: none;
-      text-decoration: none;
-      color: var(--link_color);
+      width: 50px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
     a:hover {
       color: var(--link_hover);
@@ -42,6 +40,7 @@ header {
     .mainmenu {
       display: flex;
       list-style: none;
+      align-items: center;
 
       .link-item {
         list-style: none;
